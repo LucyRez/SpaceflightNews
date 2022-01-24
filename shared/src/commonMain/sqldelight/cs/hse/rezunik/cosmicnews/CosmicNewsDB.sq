@@ -1,0 +1,18 @@
+CREATE TABLE NewsItem (
+id INTEGER NOT NULL,
+title TEXT NOT NULL,
+newsSite TEXT NOT NULL,
+timePublished TEXT NOT NULL,
+imageUrl TEXT NOT NULL,
+articleUrl TEXT NOT NULL
+);
+
+insertNewsItem:
+INSERT INTO NewsItem(id, title, newsSite, timePublished, imageUrl, articleUrl)
+VALUES(?, ?, ?, ?, ?, ?);
+
+removeAllNewsItems:
+DELETE FROM NewsItem;
+
+selectAllNewsItems:
+SELECT * FROM NewsItem;
